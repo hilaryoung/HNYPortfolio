@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/case.css" />
+    <link rel="stylesheet" href="styles/project-navigation.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link rel="stylesheet" href="styles/project-tile.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <title>HNY Portfolio - DEFRA</title>
+</head>
+
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <img id="loaderFrame" src="assets/home/frame1.svg" alt="Loading" />
+    </div>
+
+    <!-- PROJECT NAVIGATION -->
+    <header class="project-navigation">
+        <a href="index.html" class="project-logo" id="projectLogo">hny.</a>
+    </header>
+
+    <div class="project-menu" id="projectMenu">
+        <a href="index.html" class="project-menu-link">
+            <span>Home</span>
+            <img src="assets/home/home.svg" alt="">
+        </a>
+
+        <a href="about.html" class="project-menu-link">
+            <span>About</span>
+            <img src="assets/home/hilary-pink.svg" alt="">
+        </a>
+
+        <a href="mailto:your-email@email.com" class="project-menu-link">
+            <span>Contact</span>
+            <img src="assets/home/mail.svg" alt="">
+        </a>
+
+        <button class="project-menu-close" id="projectMenuClose">close</button>
+    </div>
+
+    <!-- HEADER -->
+    <div class="row">
+        <div class="project-meta-box">
+            <div class="project-title">
+                100+ Journeys to One: Rebuilding DEFRA’s eHMI Platform
+            </div>
+
+            <div class="meta-row">
+                <img src="assets/IBMLogo.png" class="logo" />
+                <img src="assets/NESOLogo.png" class="logo" />
+
+                <div class="divider"></div>
+
+                <div class="meta-text">Oct 2023 - February 2024</div>
+            </div>
+        </div>
+
+        <div class="project-thumbnail-box">
+            <div class="project-thumbnail-single">
+                <img src="assets/DEFRA/1.jpg" alt="Thumbnail" class="thumbnail-image">
+            </div>
+            <div class="project-thumbnail-single">
+                <img src="assets/DEFRA/2.jpg" alt="Thumbnail" class="thumbnail-image">
+            </div>
+            <div class="project-thumbnail-single">
+                <img src="assets/DEFRA/3.jpg" alt="Thumbnail" class="thumbnail-image">
+            </div>
+            <div class="project-thumbnail-single">
+                <img src="assets/DEFRA/4.jpg" alt="Thumbnail" class="thumbnail-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="light-section">
+
+        <div class="row">
+            <div class="column-50 padding-right-desktop">
+                <div class="section-tag">— THE ASK</div>
+                <p>
+                    <b>Overhaul DEFRA’s 20-year-old import reporting platform into a scalable, modern system.</b>
+                    <br><br>
+                    The eHMI platform is an internal system used to manage & record plant & food imports into the UK.
+                </p>
+            </div>
+
+            <div class="column-50 padding-left-desktop">
+                <div class="section-tag">— MY ROLE</div>
+
+                <div class="meta-row">
+                    <p><b class="green-text">Sole Designer</b></p>
+
+                    <div class="divider2"></div>
+
+                    <p>Billed at Band 7 rate</p>
+                </div>
+
+                <ul>
+                    <li>Define user journeys & UI design direction</li>
+                    <li>Facilitated workshops with stakeholders & SMEs</li>
+                    <li>Supported developers in delivery</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- THE CHALLENGE -->
+    <div class="dark-section">
+
+        <div class="section-tag-light">— THE CHALLENGE</div>
+
+        <div class="row">
+            <div class="column-50 padding-right-desktop">
+                <div class="bolded-text padding-top-8px">
+                    Nothing is standardised
+                </div>
+                <br>
+                <ul>
+                    <li>Overly detailed 1:1 item & form relationship</li>
+                    <li>For every new requirements, a new journeys</li>
+                </ul>
+                <div class="secondary-highlight green-on-black padding-top-8px">
+                    Users defaulted to manual paper forms
+                    <br>
+                    eHMI 2/10 NPS
+                </div>
+            </div>
+
+            <div class="column-50 padding-left-desktop">
+
+                <img src="assets/DEFRA/challengediagram.png" class="challenge-image" />
+
+            </div>
+        </div>
+    </div>
+
+    <!-- APPROACH -->
+    <div class="light-section">
+        <div class="section-tag">— MY APPROACH</div>
+
+        <div class="row">
+            <div class="column-40">
+                <div class="bolded-text padding-top-8px">
+                    Breaking down a complex system
+                </div>
+                <br><br>
+                <p>
+                    <b>What this shows</b>
+                    <br>
+                    Possible reporting journeys, 500+ mis-matched UI & 100+ ways to report imported products.
+                </p>
+                <br><br>
+                <p>
+                    <b>Why we did it</b>
+                    <br>
+                    To break down complexity & understand how workflows were structured for different scenarios.
+                </p>
+            </div>
+            <div class="column-60 as-is-background">
+                <img src="assets/DEFRA/as-is-map.jpg" class="as-is-image" />
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPLEXITY -->
+    <div class="dark-section">
+        <div class="bolded-text padding-top-8px center-text">
+            The complexity is artificial & the system underneath is simple!
+        </div>
+
+        <br><br><br>
+
+        <div class="insight-grid">
+
+            <div class="insight-card">
+
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no1.png" class="number-img" />
+
+                    <div class="complexity-text">Only One System, Not Many</div>
+                </div>
+
+                <br>
+
+                <p2 class="light">
+                    All journeys use the same backend, APIs, and data model.
+                    Pathways don’t change system behaviour.
+                </p2>
+            </div>
+
+            <div class="insight-card">
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no2.png" class="number-img" />
+
+                    <div class="complexity-text">
+                        Shared Data Across All Flows
+                    </div>
+                </div>
+                <br>
+                <p2 class="light">
+                    Every journey captures the same core data. Different forms, same information.
+                </p2>
+            </div>
+
+            <div class="insight-card">
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no3.png" class="number-img" />
+
+                    <div class="complexity-text">
+                        Variations Are Just Conditions
+                    </div>
+                </div>
+                <br>
+                <p2 class="light">
+                    Differences (origin, rules, type) are handled through logic, not separate journeys.
+                </p2>
+            </div>
+        </div>
+
+        <br>
+
+
+    </div>
+
+    <!-- USER MAPS  -->
+    <div class="light-section">
+
+        <div class="secondary-highlight padding-top-8px add-padding-top">
+            While the system is structurally simple, usage varies by role
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="column3">
+                <img src="assets/DEFRA/Persona1.png" class="user-persona-img" />
+            </div>
+
+            <div class="column-gap">
+                .
+            </div>
+
+            <div class="column3">
+                <img src="assets/DEFRA/Persona2.png" class="user-persona-img" />
+            </div>
+
+            <div class="column-gap">
+                .
+            </div>
+
+            <div class="column3">
+                <img src="assets/DEFRA/Persona3.png" class="user-persona-img" />
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+
+    <!--TO BE SEGUE-->
+    <div class="dark-section">
+
+        <br><br>
+
+        <div class="teritary-highlight padding-top-8px add-padding-top white-on-black center-text add-line-height">
+            By understanding true system structure & needs of different roles,
+            <br>
+            <div class="green-on-black">
+                we move towards a standardised experience that adapts dynamically.
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+
+    <!-- TO BE JOURNEY -->
+    <div class="light-section">
+
+        <div class="section-tag">— TO-BE JOURNEY</div>
+        <br>
+
+        <img src="assets/DEFRA/Persona1.png" class="user-persona-img" />
+
+        <br><br>
+
+        <div class="insight-grid">
+
+            <div class="insight-card-dark">
+
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no1-dark.png" class="number-img" />
+
+                    <div class="complexity-text">Single, standardised journey</div>
+                </div>
+
+                <br>
+
+                <p2>
+                    Adaptable based on user role, product type, purpose, priority, and country rules.
+                </p2>
+            </div>
+
+            <div class="insight-card-dark">
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no2-dark.png" class="number-img" />
+
+                    <div class="complexity-text">
+                        Same starting point, ensuring consistency
+                    </div>
+                </div>
+                <br>
+                <p2>
+                    Journey diverges dynamically and based on context, showing only what is relevant.
+                </p2>
+            </div>
+
+
+            <div class="insight-card-dark">
+                <div class="meta-row">
+                    <img src="assets/DEFRA/no3-dark.png" class="number-img" />
+
+                    <div class="complexity-text">
+                        Simpler experience. Fewer Error. Faster Submission
+                    </div>
+                </div>
+                <br>
+                <p2>
+                    One journey instead of 100+ fragmented flows
+                </p2>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- VISUAL -->
+    <div class="dark-section">
+        <img src="assets/DEFRA/stats.png" class="img-100" />
+
+        <br><br><br>
+
+
+        <img src="assets/DEFRA/final-defra.jpg" class="img-100" />
+
+        <br><br>
+
+        <div class="row">
+            <div class="gallery-50">
+                <img src="assets/DEFRA/defrahd2.jpg" class="img-100" />
+            </div>
+
+            <div class="gallery-50-spacer">
+                .
+            </div>
+
+            <div class="gallery-50">
+                <img src="assets/DEFRA/defrahd3.jpg" class="user-persona-img" />
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- DESIGN SYSTEM -->
+    <div class="light-section">
+
+        <div class="row">
+            <div class="column-40">
+                <div class="section-tag">— FUTURE PROOFING DESIGNS</div>
+
+                <div class="bolded-text padding-top-8px">
+                    Built a dev-ready design system to prevent fragmentation
+                </div>
+                <br><br>
+                <p>
+                    ensuring future journeys stay consistent and scalable.
+                </p>
+            </div>
+            <div class="column-60 as-is-background">
+                <img src="assets/DEFRA/as-is-map.jpg" class="as-is-image" />
+            </div>
+        </div>
+
+    </div>
+
+    <!-- IMPACT  -->
+    <div class="dark-section">
+
+        <div class="bolded-text padding-top-8px">
+            My Impact
+        </div>
+
+        <br><br>
+
+
+        <div class="insight-grid">
+
+            <div class="insight-card-dark2">
+
+                <div class="impact-text green-on-black">
+                    2 → 9/10 NPS
+                </div>
+                <br>
+                <p2 class="light">
+                    Simplified journey and modern UI significantly improved user satisfaction and confidence in
+                    submissions.
+                </p2>
+            </div>
+
+            <div class="insight-card-dark2">
+                <div class="impact-text green-on-black">
+                    +20% Faster Development
+                </div>
+                <br>
+                <p2 class="light">
+                    Dev-ready design system reduced effort by eliminating the need to rebuild common components.
+                </p2>
+            </div>
+
+
+            <div class="insight-card-dark2">
+                <div class="impact-text green-on-black">
+                    Scaled Across 5+ DEFRA Projects
+                </div>
+                <br>
+                <p2 class="light">
+                    Design system adopted across all DEFRA projects.
+                </p2>
+            </div>
+        </div>
+
+
+        <br><br><br>
+
+
+
+        <div class="insight-grid">
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “Hilary - the most impressive design execution I have seen in 18 years I've been with the IBM.
+                    Design and development capability?! a pure breath of fresh air.”
+                    <b>Michael Baralic, Lead .NET
+                        Developer</b>
+                </p2>
+            </div>
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “You have to taken the cognitive load away from them by producing dev-ready UIs so they (developers)
+                    can focus on the coding”
+                    <b>Howard Jackson, Senior Managing Consultant</b>
+            </div>
+
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “Your ability to breathe fresh life into applications that were last updated 20-25-years ago is
+                    commendable and truly aligns them with contemporary UI standards.”
+                    <b>Zach Lines, IBM Developer</b>
+                </p2>
+            </div>
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “I've found your design skills to be first-class, demonstrated by the designs you have produced and
+                    the unexpected coding skills you have!”
+                    <b>Ian Myers, Senior Developer</b>
+                </p2>
+            </div>
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “Give me more of what Hilary has made! beautiful screens.”
+                    <b>Defra client (eHMI user)</b>
+                </p2>
+            </div>
+
+            <div class="quote-card-dark">
+                <p2 class="light">
+                    “This is exactly what we wanted but never knew how to describe!”
+                    <b>Defra client (eHMI user)</b>
+                </p2>
+            </div>
+        </div>
+
+
+        <br><br>
+
+
+
+
+    </div>
+
+    <!-- OTHER PROJECTS -->
+    <div class="light-section">
+
+       <div class="section-tag center-text">
+        EXPLORE OTHER PROJECTS
+       </div>
+        <br>
+
+        <div class="project-grid">
+            <a href="NESO.html" class="project-card">
+                <img src="assets/home/neso-thumbnail.png" alt="NESO project preview" />
+                <div class="project-overlay">
+                    <h2>Transforming Control Room Design with AI-Led Simulations</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/MWD-thumbnail.png" alt="DEFRA project preview" />
+                <div class="project-overlay">
+                    <h2>NESO OBP's MW Dispatch</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/BM-thumbnail.png" alt="Project preview" />
+                <div class="project-overlay">
+                    <h2>Automation Tools</h2>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script>
+        const projectLogo = document.getElementById("projectLogo");
+        const projectMenu = document.getElementById("projectMenu");
+        const projectMenuClose = document.getElementById("projectMenuClose");
+        const projectMenuLinks = document.querySelectorAll(".project-menu-link");
+
+        function openMenu() {
+            projectMenu.classList.add("active");
+        }
+
+        function closeMenu() {
+            projectMenu.classList.remove("active");
+        }
+
+        function toggleMenu(e) {
+            e.preventDefault();
+
+            if (projectMenu.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        }
+
+        projectLogo.addEventListener("click", toggleMenu);
+
+        projectMenuClose.addEventListener("click", closeMenu);
+
+        projectMenu.addEventListener("click", function (e) {
+            const clickedMenuLink = e.target.closest(".project-menu-link");
+            const clickedCloseButton = e.target.closest(".project-menu-close");
+
+            if (!clickedMenuLink && !clickedCloseButton) {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                closeMenu();
+            }
+        });
+    </script>
+
+    <script>
+        const logoEl = document.getElementById("projectLogo");
+
+        function updateLogoColor() {
+            const logoRect = logoEl.getBoundingClientRect();
+            const logoY = logoRect.top + logoRect.height / 2;
+
+            const sections = document.querySelectorAll(".light-section, .dark-section");
+
+            let currentSection = null;
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+
+                if (rect.top <= logoY && rect.bottom >= logoY) {
+                    currentSection = section;
+                }
+            });
+
+            logoEl.classList.remove("logo-on-light", "logo-on-dark");
+
+            if (currentSection && currentSection.classList.contains("light-section")) {
+                logoEl.classList.add("logo-on-light");
+            } else {
+                logoEl.classList.add("logo-on-dark");
+            }
+        }
+
+        updateLogoColor();
+        window.addEventListener("scroll", updateLogoColor);
+        window.addEventListener("resize", updateLogoColor);
+    </script>
+
+
+    <!--Loader script-->
+    <script>
+        const frames = [
+            "assets/home/frame1.svg",
+            "assets/home/frame2.svg",
+            "assets/home/frame3.svg",
+            "assets/home/frame4.svg",
+            "assets/home/frame5.svg",
+            "assets/home/frame6.svg",
+            "assets/home/frame7.svg",
+            "assets/home/frame8.svg",
+            "assets/home/frame9.svg",
+            "assets/home/frame10.svg"
+        ];
+
+        let currentFrame = 0;
+        const frameEl = document.getElementById("loaderFrame");
+        const loader = document.getElementById("pageLoader");
+
+        const frameSpeed = 100;
+
+        const animation = setInterval(() => {
+            currentFrame = (currentFrame + 1) % frames.length;
+            frameEl.src = frames[currentFrame];
+        }, frameSpeed);
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                loader.classList.add("hidden");
+
+                // stop animation AFTER fade-out finishes
+                setTimeout(() => {
+                    clearInterval(animation);
+                }, 1450);
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>

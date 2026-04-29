@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/project-navigation.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link rel="stylesheet" href="styles/project-tile.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <title>Hilary Young Portfolio</title>
+</head>
+
+<body class="home-page">
+
+    <div class="page-loader" id="pageLoader">
+        <img id="loaderFrame" src="assets/home/frame1.svg" alt="Loading" />
+    </div>
+
+    <!-- HOME NAVIGATION -->
+    <header class="project-navigation home-navigation">
+        <a href="index.html" class="project-logo home-logo" id="projectLogo">hny.</a>
+
+        <nav class="home-nav-links">
+            <a href="about.html">About</a>
+            <a href="mailto:your-email@email.com">Contact</a>
+        </nav>
+    </header>
+
+    <!-- MOBILE MENU ONLY -->
+    <div class="project-menu" id="projectMenu">
+        <a href="index.html" class="project-menu-link">
+            <span>Home</span>
+            <img src="assets/home/home.svg" alt="" />
+        </a>
+
+        <a href="about.html" class="project-menu-link">
+            <span>About</span>
+            <img src="assets/home/hilary-pink.svg" alt="" />
+        </a>
+
+        <a href="mailto:your-email@email.com" class="project-menu-link">
+            <span>Contact</span>
+            <img src="assets/home/mail.svg" alt="" />
+        </a>
+
+        <button class="project-menu-close" id="projectMenuClose">close</button>
+    </div>
+
+    <!-- HERO DESKTOP -->
+    <section class="hero-intro">
+        <h1>
+            <span>Hi,</span>
+            <img src="assets/home/sun.svg" alt="" class="inline-icon sun" />
+
+            <span>I’m Hilary</span>
+            <img src="assets/home/hilary-pill.svg" alt="Illustration of Hilary" class="inline-icon portrait" />
+
+            <br />
+
+            <span>a designer</span>
+            <img src="assets/home/designer-pill.svg" alt="" class="inline-icon about-pill" />
+
+            <span>developer</span>
+            <img src="assets/home/developer pill.svg" alt="" class="inline-icon about-pill" />
+
+            <br />
+
+            <span>&amp; dog trainer.</span>
+            <img src="assets/home/pomo.svg" alt="" class="inline-icon pomo-pill" />
+        </h1>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section class="projects-section">
+        <div class="projects-heading">
+            <span>Projects</span>
+            <div></div>
+        </div>
+
+        <div class="project-grid">
+            <a href="NESO.html" class="project-card">
+                <img src="assets/home/neso-thumbnail.png" alt="NESO project preview" />
+                <div class="project-overlay">
+                    <h2>Transforming Control Room Design with AI-Led Simulations</h2>
+                </div>
+            </a>
+
+            <a href="DEFRA.html" class="project-card">
+                <img src="assets/home/defra-thumbnail.png" alt="DEFRA project preview" />
+                <div class="project-overlay">
+                    <h2>100+ Journeys to One: Rebuilding DEFRA’s eHMI Platform</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/MWD-thumbnail.png" alt="Project preview" />
+                <div class="project-overlay">
+                    <h2>NESO OBP's MW Dispatch</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/BM-thumbnail.png" alt="Project preview" />
+                <div class="project-overlay">
+                    <h2>Automation Tools</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/DM-thumbnail.png" alt="Project preview" />
+                <div class="project-overlay">
+                    <h2>NESO OBP's Declaration Manager</h2>
+                </div>
+            </a>
+
+            <a href="soon.html" class="project-card">
+                <img src="assets/home/F-thumbnail.png" alt="Project preview" />
+                <div class="project-overlay">
+                    <h2>Formulae AI Optimiser</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script>
+        const projectLogo = document.getElementById("projectLogo");
+        const projectMenu = document.getElementById("projectMenu");
+        const projectMenuClose = document.getElementById("projectMenuClose");
+
+        function isMobile() {
+            return window.innerWidth <= 700;
+        }
+
+        function openMenu() {
+            projectMenu.classList.add("active");
+        }
+
+        function closeMenu() {
+            projectMenu.classList.remove("active");
+        }
+
+        projectLogo.addEventListener("click", function (e) {
+            if (isMobile()) {
+                e.preventDefault();
+                openMenu();
+            }
+        });
+
+        projectMenuClose.addEventListener("click", closeMenu);
+
+        projectMenu.addEventListener("click", function (e) {
+            const clickedMenuLink = e.target.closest(".project-menu-link");
+            const clickedCloseButton = e.target.closest(".project-menu-close");
+
+            if (!clickedMenuLink && !clickedCloseButton) {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                closeMenu();
+            }
+        });
+    </script>
+
+
+    <!--Loader script-->
+    <script>
+        const frames = [
+            "assets/home/frame1.svg",
+            "assets/home/frame2.svg",
+            "assets/home/frame3.svg",
+            "assets/home/frame4.svg",
+            "assets/home/frame5.svg",
+            "assets/home/frame6.svg",
+            "assets/home/frame7.svg",
+            "assets/home/frame8.svg",
+            "assets/home/frame9.svg",
+            "assets/home/frame10.svg"
+        ];
+
+        let currentFrame = 0;
+        const frameEl = document.getElementById("loaderFrame");
+        const loader = document.getElementById("pageLoader");
+
+        const frameSpeed = 100;
+
+        const animation = setInterval(() => {
+            currentFrame = (currentFrame + 1) % frames.length;
+            frameEl.src = frames[currentFrame];
+        }, frameSpeed);
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                loader.classList.add("hidden");
+
+                // stop animation AFTER fade-out finishes
+                setTimeout(() => {
+                    clearInterval(animation);
+                }, 1450);
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>

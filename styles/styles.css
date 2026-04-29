@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "LogoFont";
+  src: url("../assets/fonts/logo-font.otf") format("opentype");
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #151515;
+  color: white;
+}
+
+/* HERO */
+.hero-intro {
+  padding-left: 9vw;
+  padding-right: 9vw;
+  padding-top: 17vh;
+  padding-bottom: 8.4vh;
+}
+
+.hero-intro h1 {
+  max-width: 80vw;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.85rem, 4.2vw, 7rem);
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+/* INLINE ICONS */
+.inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+  margin: 0 0.1em;
+  transform: translateY(-0.05em);
+  height: 0.8em;
+  width: 1.25em;
+  border-radius: 999px;
+}
+
+.inline-icon.sun {
+  width: 1.2em;
+  height: 0.95em;
+}
+
+.inline-icon.about-pill {
+  width: 1.55em;
+  height: 0.95em;
+}
+
+.inline-icon.pomo-pill {
+  width: 2em;
+  height: 0.95em;
+}
+
+.inline-icon.portrait {
+  width: 2em;
+  height: 0.95em;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  body {
+    padding: 0 24px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .hero-intro {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    padding-top: 17vh;
+    padding-bottom: 0.4vh;
+  }
+
+}

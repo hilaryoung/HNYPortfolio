@@ -1,0 +1,787 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    background: #ffffff;
+}
+
+p {
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+}
+
+p2 {
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 0.9vw, 1.4rem);
+}
+
+.light {
+    font-weight: 300;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.project-meta-box {
+    float: left;
+    width: 50%;
+    padding-left: 14vw;
+    padding-right: 3vw;
+    height: 64vh;
+    background-color: #1E1E1E;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    /* 👈 STACK */
+    justify-content: center;
+    /* 👈 vertical centering */
+    gap: 24px;
+    /* 👈 space between title + meta */
+}
+
+.project-thumbnail-box {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    height: 64vh;
+}
+
+.project-thumbnail-single {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    height: calc(64vh / 2);
+    overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.project-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: white;
+    font-size: clamp(1.8rem, 2.8vw, 4.8rem);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+/* Meta row*/
+.meta-row {
+    display: flex;
+    align-items: center;
+    /* vertical alignment */
+    gap: 16px;
+    /* spacing between items */
+}
+
+/* logos */
+.logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    background: black;
+    /* optional if logos need block bg */
+    border-radius: 4px;
+    /* optional styling */
+}
+
+/* divider line */
+.divider {
+    width: 1px;
+    height: 32px;
+    background-color: rgb(79, 79, 79);
+}
+
+.divider2 {
+    width: 1px;
+    height: 20px;
+    background-color: rgb(79, 79, 79);
+}
+
+/* text */
+.meta-text {
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    /*body text size*/
+    color: #dfdfdf;
+}
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.light-section {
+    padding-left: 14vw;
+    padding-right: 14vw;
+    padding-top: clamp(5.5vh, 7.5vh, 9vh);
+    padding-bottom: clamp(5.5vh, 7.5vh, 9vh);
+}
+
+.column-50 {
+    float: left;
+    width: 50%;
+}
+
+.padding-right-desktop {
+    padding-right: 3vw;
+}
+
+.padding-left-desktop {
+    padding-left: 3vw;
+}
+
+.padding-right-desktop-condensed {
+    padding-right: 1.5vw;
+}
+
+.padding-left-desktop-condensed {
+    padding-left: 1.5vw;
+}
+
+.section-tag {
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    font-weight: 300;
+    color: #343434;
+    padding-bottom: 24px;
+}
+
+.section-tag-light {
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    font-weight: 300;
+    color: #dfdfdf;
+    padding-bottom: 24px;
+}
+
+.green-text {
+    color: #0E5814;
+}
+
+.orange-text {
+    color: #E04512;
+}
+
+.peach-text {
+    color: #FE6C52;
+}
+
+ul {
+    padding-left: 16px;
+    /* 👈 remove default indent */
+    margin-top: 16px;
+    /* spacing from meta row */
+    list-style-position: inside;
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+}
+
+li {
+    line-height: 1.6;
+    list-style-position: outside;
+    /* 👈 important */
+    padding-left: 8px;
+    /* space between bullet and text */
+    text-indent: 0;
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+}
+
+p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CHALLANGES
+========================= */
+
+.dark-section {
+    background-color: #1E1E1E;
+    color: white;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    padding-top: clamp(5.5vh, 7.5vh, 9vh);
+    padding-bottom: clamp(5.5vh, 7.5vh, 9vh);
+}
+
+.bolded-text {
+    font-size: clamp(1.4rem, 2.2vw, 2.5rem);
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.bolded-text2 {
+    font-size: clamp(1.2rem, 1.6vw, 2.0rem);
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+}
+
+
+.padding-top-8px {
+    padding-top: 8px;
+}
+
+.padding-top-16px {
+    padding-top: 16px;
+}
+
+.padding-top-40px {
+    padding-top: 40px;
+}
+
+.padding-bottom-40px {
+    padding-bottom: 40px;
+}
+
+.secondary-highlight {
+    font-size: clamp(1.2rem, 1.3vw, 1.7rem);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.secondary-highlight-light {
+    font-size: clamp(1.2rem, 1.3vw, 1.7rem);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.teritary-highlight {
+    font-size: clamp(1.5rem, 1.5vw, 1.9rem);
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.green-on-black {
+    color: #91ce94;
+}
+
+.challenge-image {
+    width: 100%;
+}
+
+
+/* =========================
+   APPROACH
+========================= */
+
+.column-40 {
+    float: left;
+    width: 40%;
+    padding-right: 3vw;
+}
+
+.column-60 {
+    float: left;
+    width: 60%;
+    padding-left: 3vw;
+}
+
+.as-is-image {
+    width: 100%;
+}
+
+.as-is-background {
+    background-color: #F0F0F0;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* =========================
+   COMPLEXITY
+========================= */
+
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.insight-card {
+    border: 1px solid rgba(255, 255, 255, 0.355);
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.insight-card-dark {
+    border: 1px solid #c5c5c5ad;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.insight-card-dark2 {
+    border: 1px solid #6e6e6ea1;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.quote-card-dark {
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-style: italic;
+}
+
+.complexity-text {
+    font-size: clamp(0.9rem, 1vw, 1.5rem);
+    font-weight: 600;
+}
+
+.number-img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+/* =========================
+   USER MAPS
+========================= */
+.column3 {
+    float: left;
+    width: 32%;
+    padding: 0px;
+}
+
+.column-gap {
+    float: left;
+    width: 2%;
+    padding: 0px;
+    color: rgba(255, 255, 255, 0);
+}
+
+.user-persona-img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.add-line-height {
+    line-height: 2.0;
+}
+
+/* =========================
+   IMAGE GALLERY
+========================= */
+
+.gallery-50 {
+    float: left;
+    width: 49%;
+    padding: 0px;
+}
+
+.gallery-50-spacer {
+    float: left;
+    width: 2%;
+    color: rgba(255, 255, 255, 0);
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.impact-text {
+    font-size: clamp(1.3rem, 1.4vw, 1.9rem);
+    font-weight: 600;
+}
+
+
+/* =========================
+   NESO CHALLENGE
+========================= */
+
+.column-45 {
+    float: left;
+    width: 45%;
+    padding-right: 3vw;
+}
+
+.column-55 {
+    float: left;
+    width: 55%;
+    padding-left: 3vw;
+}
+
+.narrow-space {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+.challenge-hr {
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+    width: 90%;
+    border: none;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   NESO WHERE WE WERE
+========================= */
+.column-title {
+    float: left;
+    width: 40%;
+}
+
+.column-subdesc {
+    float: left;
+    width: 60%;
+    padding-top: 8px;
+}
+
+.condensed-width {
+    width: 70%;
+}
+
+.column4b4 {
+    float: left;
+    width: 25%;
+    padding: 0px;
+}
+
+
+.column-35 {
+    float: left;
+    width: 35%;
+    padding-right: 3vw;
+}
+
+.column-65 {
+    float: left;
+    width: 65%;
+    padding-left: 3vw;
+}
+
+.approach-background {
+    background-color: #F0F0F0;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.delivery-team-area {
+    width: 100%;
+    margin-top: 16px;
+    background-color: #282828;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    border-radius: 0px;
+}
+
+.user-team-area {
+    width: 100%;
+    margin-top: 16px;
+    background-color: #282828;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    border-radius: 0px;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0px;
+}
+
+.bold-this {
+    font-weight: 600;
+}
+
+.impact-area {
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+
+.columnby4 {
+    float: left;
+    width: 23.5%;
+    background-color: white;
+}
+
+.columnby4-space {
+    float: left;
+    width: 2%;
+    color: rgba(255, 255, 255, 0);
+}
+
+.tool-box-section {
+    background-color: white;
+    padding: 12px;
+    color: black;
+    padding-top: 10px;
+}
+
+.tool-name-tag {
+    color: black;
+    line-height: 1.6;
+    font-size: clamp(0.9rem, 0.8vw, 1.5rem);
+    padding-bottom: 8px;
+}
+
+.NPS-score {
+    color: black;
+    font-size: clamp(0.9rem, 1.2vw, 1.7rem);
+    font-weight: 600;
+}
+
+.edge-padding {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+.summary-text {
+    line-height: 1.7;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+@media screen and (min-width: 1000px) {
+    .project-meta-box {
+        padding-left: 16vw;
+        padding-right: 3vw;
+    }
+
+    .light-section {
+        padding-left: 16vw;
+        padding-right: 16vw;
+    }
+
+    .dark-section {
+        padding-left: 16vw;
+        padding-right: 16vw;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .project-meta-box {
+        width: 100%;
+        height: auto;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 15vh;
+        padding-bottom: 24px;
+    }
+
+    .project-thumbnail-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .meta-row {
+        gap: 12px;
+    }
+
+    .project-thumbnail-single {
+        height: auto;
+    }
+
+    .column-50 {
+        width: 100%;
+    }
+
+    .padding-left-desktop,
+    .padding-right-desktop,
+    .padding-left-desktop-condensed,
+    .padding-right-desktop-condensed {
+        padding: 0px;
+    }
+
+    .light-section {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 0px;
+    }
+
+    .section-tag {
+        padding-top: 42px;
+    }
+
+
+    ul {
+        padding-left: 16px;
+        margin-top: 16px;
+        list-style-position: inside;
+    }
+
+    li {
+        line-height: 1.6;
+        list-style-position: outside;
+        padding-left: 8px;
+        text-indent: 0;
+    }
+
+    .challenge-image {
+        padding-top: 24px;
+    }
+
+    .column-40,
+    .column-60,
+    .column-45,
+    .column-55 {
+        float: left;
+        width: 100%;
+        padding-right: 0vw;
+        padding-left: 0vw;
+    }
+
+    .column-60 {
+        margin-top: 32px;
+    }
+
+    .as-is-background {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+
+    .insight-section {
+        padding: 56px 24px;
+    }
+
+    .insight-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .insight-card {
+        min-height: auto;
+    }
+
+    .number-img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+    }
+
+    .column3 {
+        float: left;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .column-gap {
+        float: left;
+        width: 100%;
+        padding: 1px;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    .add-padding-top {
+        padding-top: 40px;
+    }
+
+    .gallery-50 {
+        width: 100%;
+    }
+
+    .padding-on-mobile {
+        padding-bottom: 32px;
+    }
+
+    .narrow-space {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .condensed-width {
+        width: 100%;
+    }
+
+    .column-title {
+        width: 100%;
+    }
+
+    .column-subdesc {
+        width: 100%;
+        padding-top: 24px;
+    }
+
+
+    .column-35 {
+        float: left;
+        width: 100%;
+        padding-right: 0vw;
+        padding-bottom: 32px;
+    }
+
+    .column-65 {
+        float: left;
+        width: 100%;
+        padding-left: 0vw;
+    }
+
+    .impact-area {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        padding-top: 8px;
+    }
+
+    .edge-padding {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .summary-text {
+        line-height: 1.7;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .columnby4 {
+        float: left;
+        width: 100%;
+    }
+
+    .columnby4-space {
+        float: left;
+        width: 2%;
+        color: rgba(255, 255, 255, 0);
+    }
+}
